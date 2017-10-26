@@ -19,23 +19,13 @@ namespace Scrabble.Tests
       //Assert
       Assert.AreEqual(output, result);
     }
-    [TestMethod]
-    public void GetScore_LongWord_int()
-    {
-      //Arrange
-      Scrabble newScrab = new Scrabble("iu");
-      var output = 2;
-      //Act
-      int result = newScrab.GetScore();
-      //Assert
-      Assert.AreEqual(output, result);
-    }
+
     [TestMethod]
     public void GetScore_Numbers_int()
     {
       //Arrange
       Scrabble newScrab = new Scrabble("2312sadasSDD");
-      var output = 11;
+      var output = 0;
       //Act
       int result = newScrab.GetScore();
       //Assert
